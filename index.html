@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset = "utf-8">
+    <title>Build a Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <header id="header">
+        <h1 id="title">Community Feedback Survey</h1>
+        <p id="description">Thank you for participating in our survey. Your feedback helps us improve our community services.</p>
+      </header>
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label">Name
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+          </label>
+          <label id="email-label">Email
+            <input type="email" name="email" id="email" placeholder="Enter your email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+          </label>
+          <label id="number-label">Age
+            <input type="number" name="age" id="number" placeholder="Enter your age" min="10" max="99" >
+          </label>
+          <label id="gender-label">Gender
+            <select id="dropdown">
+              <option value="">Select your gender</option>
+              <option value="1">Male</option>
+              <option value="2">Female</option>
+              <option value="3">Other</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <p>How often do you participate in community events?</p>
+          <label id="community_events">
+            <input type="radio" name="community_events" value="Never" class="inline" >
+            Never
+          </label>
+          <label id="community_events">
+            <input type="radio" name="community_events" value="Rarely" class="inline" >
+            Rarely
+          </label>
+          <label id="community_events">
+            <input type="radio" name="community_events" value="Sometimes" class="inline" >
+            Sometimes
+          </label>
+          <label id="community_events">
+            <input type="radio" name="community_events" value="Often" class="inline" >
+            Often
+          </label>
+          <label id="community_events">
+            <input type="radio" name="community_events" value="Always" class="inline" >
+            Always
+          </label>
+
+          <p>Which community services do you use most? (Check all that apply)</p>
+          <label id="community_events">
+            <input type="checkbox" name="community_events" value="Educational programs" class="inline" >
+            Educational programs
+          </label>
+          <label id="community_events">
+            <input type="checkbox" name="community_events" value="Health services" class="inline" >
+            Health services
+          </label>
+          <label id="community_events">
+            <input type="checkbox" name="community_events" value="Recreational activities" class="inline" >
+            Recreational activities
+          </label>
+          <label id="community_events">
+            <input type="checkbox" name="community_events" value="Community meetings" class="inline" >
+            Community meetings
+          </label>
+          <label id="community_events">
+            <input type="checkbox" name="community_events" value="Other" class="inline" >
+            Other: ____
+          </label>
+        </fieldset>
+        <fieldset>
+          <p>Suggestions and Comments</p>
+          <textarea id="comment" name="comment" placeholder="Enter your comment here..." >
+          </textarea>
+        </fieldset>
+        <input type="submit" id="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>
